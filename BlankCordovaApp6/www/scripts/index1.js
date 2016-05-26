@@ -14,6 +14,7 @@
     var isOnline;
 
 
+
     function checkConnection() {
         return navigator.connection.type;
     }
@@ -102,12 +103,12 @@
 
         window.addEventListener("orientationchange", changeIFrame, true); 
         
-        // TODO: Платформа Cordova загружена. Выполните здесь инициализацию, которая требуется Cordova.
+        //// TODO: Платформа Cordova загружена. Выполните здесь инициализацию, которая требуется Cordova.
         console.log("device ready");
     };
 
     function onPause() {
-        // TODO: Это приложение приостановлено. Сохраните здесь состояние приложения.
+        //// TODO: Это приложение приостановлено. Сохраните здесь состояние приложения.
         clearTimeout(myTimerOff);
         myTimerOff = setTimeout(removeIFrame, 1500);
     };
